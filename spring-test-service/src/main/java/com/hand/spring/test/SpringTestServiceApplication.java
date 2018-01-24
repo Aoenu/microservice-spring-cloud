@@ -1,4 +1,4 @@
-package com.hand;
+package com.hand.spring.test;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

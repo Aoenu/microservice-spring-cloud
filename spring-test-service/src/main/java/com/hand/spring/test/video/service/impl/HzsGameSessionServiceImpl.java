@@ -1,7 +1,7 @@
-package com.hand.video.service.impl;
+package com.hand.spring.test.video.service.impl;
 
 
-import com.hand.video.service.IHzsGameSessionService;
+import com.hand.spring.test.video.service.IHzsGameSessionService;
 import net.sf.json.JSONObject;
 import net.sf.json.JsonConfig;
 import net.sf.json.util.PropertyFilter;

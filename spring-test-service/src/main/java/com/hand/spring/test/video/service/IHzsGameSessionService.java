@@ -1,8 +1,6 @@
-package com.hand.video.service;
+package com.hand.spring.test.video.service;
 
 import net.sf.json.JSONObject;
-
-import java.util.List;
 
 /**
  * @author baoben.wu@hand-china.com

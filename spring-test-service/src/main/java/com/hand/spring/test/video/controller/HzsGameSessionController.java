@@ -1,6 +1,6 @@
-package com.hand.video.controller;
+package com.hand.spring.test.video.controller;
 
-import com.hand.video.service.IHzsGameSessionService;
+import com.hand.spring.test.video.service.IHzsGameSessionService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiImplicitParam;
 import io.swagger.annotations.ApiImplicitParams;
