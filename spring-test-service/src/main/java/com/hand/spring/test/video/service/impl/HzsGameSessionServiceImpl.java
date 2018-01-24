@@ -1,6 +1,9 @@
 package com.hand.spring.test.video.service.impl;
 
 
+import com.github.pagehelper.PageHelper;
+import com.hand.spring.test.video.dto.HzsUser;
+import com.hand.spring.test.video.mapper.HzsUserMapper;
 import com.hand.spring.test.video.service.IHzsGameSessionService;
 import net.sf.json.JSONObject;
 import net.sf.json.JsonConfig;
@@ -25,6 +28,8 @@ public class HzsGameSessionServiceImpl implements IHzsGameSessionService {
     @Autowired
     private MongoTemplate mongoTemplate;
 
+    @Autowired
+    private HzsUserMapper mapper;
 
 
     private final static String FIRSTGAMENAME = "interactive activity";
@@ -55,6 +60,12 @@ public class HzsGameSessionServiceImpl implements IHzsGameSessionService {
         sessionJson.put("levelValue", "test");
         sessionJson.put("content", gameJson);
         return sessionJson;
+    }
+
+    @Override
+    public List<HzsUser> select(int page, int pageSize) {
+        PageHelper.startPage(page, pageSize);
+        return mapper.select();
     }
 
     /**

@@ -1,6 +1,9 @@
 package com.hand.spring.test.video.service;
 
+import com.hand.spring.test.video.dto.HzsUser;
 import net.sf.json.JSONObject;
+
+import java.util.List;
 
 /**
  * @author baoben.wu@hand-china.com
@@ -21,5 +24,11 @@ public interface IHzsGameSessionService {
      * @param levelNum
      */
     JSONObject selectSession(Long levelNum);
+
+    /**
+     *
+     * @return
+     */
+    List<HzsUser> select(int page, int pageSize);
 
 }

@@ -36,14 +36,16 @@ public class HzsGameSessionController {
         Validate.isTrue(levelNum > 0 && levelNum <= 8, "关卡编号错误");
         return ResponseEntity.ok(hzsGameSessionService.selectSession(levelNum));
     }
-//
-//    @ApiOperation(value = "查询", notes = "查询", httpMethod = "GET", response = ResponseEntity.class)
-//    @ApiImplicitParams({
-//            @ApiImplicitParam(name = "Authorization", value = "Authorization token", required = true, dataType = "string", paramType = "header")})
-//    @GetMapping("/select")
-//    public ResponseEntity select() {
-//        return ResponseEntity.ok(hzsGameSessionService.select());
-//    }
+
+    @ApiOperation(value = "查询", notes = "查询", httpMethod = "GET", response = ResponseEntity.class)
+    @ApiImplicitParams({
+            @ApiImplicitParam(name = "page", value = "page", dataType = "Integer", paramType = "query", defaultValue = "1"),
+            @ApiImplicitParam(name = "pageSize", value = "pageSize", dataType = "Integer", paramType = "query", defaultValue = "10")})
+    @GetMapping("/select")
+    public ResponseEntity select(@RequestParam(defaultValue = "1") int page,
+                                 @RequestParam(defaultValue = "10") int pageSize) {
+        return ResponseEntity.ok(hzsGameSessionService.select(page,pageSize));
+    }
 
     @ApiOperation(value = "保存会话记录（存Mongo）", notes = "保存会话记录（存Mongo）", httpMethod = "POST", response = ResponseEntity.class)
     @PostMapping("/submitSession")
