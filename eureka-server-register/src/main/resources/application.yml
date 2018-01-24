@@ -1,0 +1,46 @@
+spring:
+  application:
+    name: register-server
+
+eureka:
+  instance:
+    hostname: localhost
+    prefer-ip-address: true
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
+    serviceUrl:
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+  server:
+    enable-self-preservation: false
+
+server:
+  port: ${PORT:8761}
+
+---
+spring:
+  profiles: peer1
+eureka:
+  instance:
+    hostname: ${PEER1_HOST:peer1}
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: ${PEER2_URL}
+  server:
+    enableSelfPreservation: false
+
+---
+spring:
+  profiles: peer2
+eureka:
+  instance:
+    hostname: ${PEER2_HOST:peer2}
+  client:
+    registerWithEureka: false
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: ${PEER1_URL}
+  server:
+    enableSelfPreservation: false

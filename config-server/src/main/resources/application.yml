@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      enabled: true
+      server:
+        git:
+          uri: ${CONFIG_URL:https://github.com/cainiao-wu/spring-config.git}
+          search-paths: '{profile}'
+          username: cainiao-wu
+          password: wu58164023
+#          uri: ${CONFIG_URL:https://git.local.zhishinet.com/hzs/zhishinetConfig.git}
+#          searchPaths: '{profile}'
+#          username: neng.liu
+#          password: Welcome123
+        bootstrap: true
+server:
+  port: ${PORT:8888}

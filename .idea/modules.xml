@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/api-gateway/api-gateway.iml" filepath="$PROJECT_DIR$/api-gateway/api-gateway.iml" />
+      <module fileurl="file://$PROJECT_DIR$/config-server/config-server.iml" filepath="$PROJECT_DIR$/config-server/config-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/eureka-server-register/eureka-server-register.iml" filepath="$PROJECT_DIR$/eureka-server-register/eureka-server-register.iml" />
+      <module fileurl="file://$PROJECT_DIR$/microservice-spring-cloud.iml" filepath="$PROJECT_DIR$/microservice-spring-cloud.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-test-service/spring-test-service.iml" filepath="$PROJECT_DIR$/spring-test-service/spring-test-service.iml" />
+    </modules>
+  </component>
+</project>
