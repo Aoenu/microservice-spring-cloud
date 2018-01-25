@@ -1,5 +1,6 @@
 package com.hand.spring.test.video.service;
 
+import com.hand.spring.test.exception.dto.TestException;
 import com.hand.spring.test.video.dto.HzsUser;
 import net.sf.json.JSONObject;
 
@@ -23,7 +24,7 @@ public interface IHzsGameSessionService {
      * @return
      * @param levelNum
      */
-    JSONObject selectSession(Long levelNum);
+    JSONObject selectSession(Long levelNum) throws TestException;
 
     /**
      *

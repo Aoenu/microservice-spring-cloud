@@ -2,6 +2,7 @@ package com.hand.spring.test.video.service.impl;
 
 
 import com.github.pagehelper.PageHelper;
+import com.hand.spring.test.exception.dto.TestException;
 import com.hand.spring.test.video.dto.HzsUser;
 import com.hand.spring.test.video.mapper.HzsUserMapper;
 import com.hand.spring.test.video.service.IHzsGameSessionService;
@@ -14,6 +15,7 @@ import org.springframework.data.mongodb.core.MongoTemplate;
 import org.springframework.data.mongodb.core.query.Criteria;
 import org.springframework.data.mongodb.core.query.Query;
 import org.springframework.stereotype.Service;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -41,25 +43,8 @@ public class HzsGameSessionServiceImpl implements IHzsGameSessionService {
      * @return
      */
     @Override
-    public JSONObject selectSession(Long levelNum) {
-        JSONObject sessionJson = new JSONObject();
-        //游戏内容抽取
-        JSONObject gameJson1 = new JSONObject();
-        gameJson1.put("name", FIRSTGAMENAME);
-        JSONObject gameJson2 = mongoTemplate.findOne(new Query().addCriteria(Criteria.where("levelNum").is(levelNum).and("gameNum").is(2L).and("contentNum").is(1)), JSONObject.class, "gamepacket_material");
-        JSONObject gameJson3 = mongoTemplate.findOne(new Query().addCriteria(Criteria.where("levelNum").is(levelNum).and("gameNum").is(3L).and("contentNum").is(1)), JSONObject.class, "gamepacket_material");
-        JSONObject gameJson4 = mongoTemplate.findOne(new Query().addCriteria(Criteria.where("levelNum").is(levelNum).and("gameNum").is(4L).and("contentNum").is(1)), JSONObject.class, "gamepacket_material");
-        List<JSONObject> gameJson = new ArrayList<>();
-        gameJson.add(gameJson1);
-        gameJson.add(gameJson2);
-        gameJson.add(gameJson3);
-        gameJson.add(gameJson4);
-        sessionJson.put("userId", 1);
-        sessionJson.put("levelNum", levelNum);
-        sessionJson.put("levelStatus", 1);
-        sessionJson.put("levelValue", "test");
-        sessionJson.put("content", gameJson);
-        return sessionJson;
+    public JSONObject selectSession(Long levelNum) throws TestException {
+        throw new TestException("error!");
     }
 
     @Override

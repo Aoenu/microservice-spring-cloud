@@ -1,5 +1,6 @@
 package com.hand.spring.test.video.controller;
 
+import com.hand.spring.test.exception.dto.TestException;
 import com.hand.spring.test.video.service.IHzsGameSessionService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiImplicitParam;
@@ -31,7 +32,7 @@ public class HzsGameSessionController {
     @ApiImplicitParams({
             @ApiImplicitParam(name = "levelNum", value = "关卡编号", required = true, dataType = "Long", paramType = "query")})
     @GetMapping("/selectSession")
-    public ResponseEntity selectSession(@RequestParam(name = "levelNum") Long levelNum) {
+    public ResponseEntity selectSession(@RequestParam(name = "levelNum") Long levelNum) throws TestException {
         Validate.notNull(levelNum, "关卡编号不能为空");
         Validate.isTrue(levelNum > 0 && levelNum <= 8, "关卡编号错误");
         return ResponseEntity.ok(hzsGameSessionService.selectSession(levelNum));
@@ -44,7 +45,7 @@ public class HzsGameSessionController {
     @GetMapping("/select")
     public ResponseEntity select(@RequestParam(defaultValue = "1") int page,
                                  @RequestParam(defaultValue = "10") int pageSize) {
-        return ResponseEntity.ok(hzsGameSessionService.select(page,pageSize));
+        return ResponseEntity.ok(hzsGameSessionService.select(page, pageSize));
     }
 
     @ApiOperation(value = "保存会话记录（存Mongo）", notes = "保存会话记录（存Mongo）", httpMethod = "POST", response = ResponseEntity.class)
