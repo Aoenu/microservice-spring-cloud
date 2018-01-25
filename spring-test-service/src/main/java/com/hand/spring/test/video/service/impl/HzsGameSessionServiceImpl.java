@@ -73,7 +73,7 @@ public class HzsGameSessionServiceImpl implements IHzsGameSessionService {
     @Override
     public RedisUser selectFromRedis(String name) {
         HashOperations<String, String, RedisUser> hashOperations = redisTemplate.opsForHash();
-        RedisUser redisUser = hashOperations.get(DEFAULTQUERYPRE, DEFAULTQUERYPRE + ":" + name);
+        RedisUser redisUser = hashOperations.get(DEFAULTQUERYPRE+ ":" + name, DEFAULTQUERYPRE + ":" + name);
         return redisUser;
     }
 
@@ -81,7 +81,7 @@ public class HzsGameSessionServiceImpl implements IHzsGameSessionService {
     public void setUserToRedis(String name) {
         HashOperations<String, String, RedisUser> hashOperations = redisTemplate.opsForHash();
         RedisUser user = new RedisUser(name, 20);
-        hashOperations.put(DEFAULTQUERYPRE, DEFAULTQUERYPRE + ":" + name,user);
+        hashOperations.put(DEFAULTQUERYPRE + ":" + name, DEFAULTQUERYPRE + ":" + name,user);
     }
 
     /**
