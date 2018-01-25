@@ -22,7 +22,7 @@ import java.util.Map;
  */
 @Api(value = "用户会话记录", description = "用户会话记录")
 @RestController
-@RequestMapping("api/game-packet")
+@RequestMapping("api/test")
 public class HzsGameSessionController {
 
     @Autowired
@@ -46,6 +46,14 @@ public class HzsGameSessionController {
     public ResponseEntity select(@RequestParam(defaultValue = "1") int page,
                                  @RequestParam(defaultValue = "10") int pageSize) {
         return ResponseEntity.ok(hzsGameSessionService.select(page, pageSize));
+    }
+
+    @ApiOperation(value = "查询Redis", notes = "查询Redis", httpMethod = "GET", response = ResponseEntity.class)
+    @ApiImplicitParams({
+            @ApiImplicitParam(name = "name", value = "name", required = true, dataType = "String", paramType = "query")})
+    @GetMapping("/selectRedis")
+    public ResponseEntity selectRedis(@RequestParam String name) {
+        return ResponseEntity.ok(hzsGameSessionService.selectRedis(name));
     }
 
     @ApiOperation(value = "保存会话记录（存Mongo）", notes = "保存会话记录（存Mongo）", httpMethod = "POST", response = ResponseEntity.class)

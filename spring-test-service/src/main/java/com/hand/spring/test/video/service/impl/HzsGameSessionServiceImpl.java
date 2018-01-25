@@ -3,6 +3,7 @@ package com.hand.spring.test.video.service.impl;
 
 import com.github.pagehelper.PageHelper;
 import com.hand.spring.test.exception.dto.TestException;
+import com.hand.spring.test.redis.dto.RedisUser;
 import com.hand.spring.test.video.dto.HzsUser;
 import com.hand.spring.test.video.mapper.HzsUserMapper;
 import com.hand.spring.test.video.service.IHzsGameSessionService;
@@ -12,11 +13,10 @@ import net.sf.json.util.PropertyFilter;
 import org.bson.Document;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.mongodb.core.MongoTemplate;
-import org.springframework.data.mongodb.core.query.Criteria;
-import org.springframework.data.mongodb.core.query.Query;
+import org.springframework.data.redis.core.HashOperations;
+import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Service;
 
-import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -33,6 +33,13 @@ public class HzsGameSessionServiceImpl implements IHzsGameSessionService {
     @Autowired
     private HzsUserMapper mapper;
 
+    @Autowired
+    private RedisTemplate redisTemplate;
+
+    @Autowired
+    private IHzsGameSessionService service;
+
+    private static final String DEFAULTQUERYPRE = "spring:study:test";
 
     private final static String FIRSTGAMENAME = "interactive activity";
 
@@ -51,6 +58,30 @@ public class HzsGameSessionServiceImpl implements IHzsGameSessionService {
     public List<HzsUser> select(int page, int pageSize) {
         PageHelper.startPage(page, pageSize);
         return mapper.select();
+    }
+
+    @Override
+    public RedisUser selectRedis(String name) {
+        RedisUser redisUser = service.selectFromRedis(name);
+        if (redisUser == null) {
+            service.setUserToRedis(name);
+            redisUser = service.selectFromRedis(name);
+        }
+        return redisUser;
+    }
+
+    @Override
+    public RedisUser selectFromRedis(String name) {
+        HashOperations<String, String, RedisUser> hashOperations = redisTemplate.opsForHash();
+        RedisUser redisUser = hashOperations.get(DEFAULTQUERYPRE, DEFAULTQUERYPRE + ":" + name);
+        return redisUser;
+    }
+
+    @Override
+    public void setUserToRedis(String name) {
+        HashOperations<String, String, RedisUser> hashOperations = redisTemplate.opsForHash();
+        RedisUser user = new RedisUser(name, 20);
+        hashOperations.put(DEFAULTQUERYPRE, DEFAULTQUERYPRE + ":" + name,user);
     }
 
     /**

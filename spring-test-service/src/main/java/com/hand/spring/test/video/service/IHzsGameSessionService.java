@@ -1,6 +1,7 @@
 package com.hand.spring.test.video.service;
 
 import com.hand.spring.test.exception.dto.TestException;
+import com.hand.spring.test.redis.dto.RedisUser;
 import com.hand.spring.test.video.dto.HzsUser;
 import net.sf.json.JSONObject;
 
@@ -32,4 +33,23 @@ public interface IHzsGameSessionService {
      */
     List<HzsUser> select(int page, int pageSize);
 
+    /**
+     *
+     * @return
+     * @param name
+     */
+    RedisUser selectRedis(String name);
+
+    /**
+     *
+     * @param name
+     * @return
+     */
+    RedisUser selectFromRedis(String name);
+
+    /**
+     *
+     * @param name
+     */
+    void setUserToRedis(String name);
 }
