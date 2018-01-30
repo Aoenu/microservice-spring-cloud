@@ -11,7 +11,7 @@ import java.util.Date;
  * @Date 2018/1/25.
  * @description
  */
-@Component
+//@Component
 public class ScheduledTasks {
 
     private static final SimpleDateFormat dateFormat = new SimpleDateFormat("HH:mm:ss");
