@@ -1,5 +1,6 @@
 package com.hand.config;
 
+import com.hand.security.config.WebSecurityConfig;
 import com.netflix.zuul.ZuulFilter;
 import com.netflix.zuul.context.RequestContext;
 import org.springframework.stereotype.Component;
@@ -48,11 +49,11 @@ public class GatewayZuulFilter extends ZuulFilter {
     public Object run() {
         RequestContext ctx = RequestContext.getCurrentContext();
         HttpServletRequest request = ctx.getRequest();
-        String token = request.getParameter("token");
-        if(token == null) {
+        String tokenPayload = request.getHeader(WebSecurityConfig.TOKEN_HEADER_PARAM);
+        if(tokenPayload == null) {
             ctx.setSendZuulResponse(false);
             ctx.setResponseStatusCode(404);
-            ctx.setResponseBody("token cannot be empty");
+            ctx.setResponseBody("X-Authorization cannot be empty");
         }
         return null;
     }

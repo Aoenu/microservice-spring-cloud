@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="api-gateway" />
+        <module name="api-gateway-interface" />
         <module name="config-server" />
         <module name="eureka-server-register" />
         <module name="spring-test-service" />
@@ -14,6 +15,8 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="api-gateway" target="1.8" />
+      <module name="api-gateway-interface" target="1.8" />
+      <module name="battcn-jwt-service" target="1.8" />
       <module name="config-server" target="1.8" />
       <module name="eureka-server-register" target="1.8" />
       <module name="microservice-spring-cloud" target="1.8" />

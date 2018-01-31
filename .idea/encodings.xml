@@ -3,6 +3,8 @@
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/api-gateway" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/api-gateway-interface" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/battcn-jwt-service" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/config-server" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/eureka-server-register" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-test-service" charset="UTF-8" />

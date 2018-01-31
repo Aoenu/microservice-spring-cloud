@@ -8,7 +8,7 @@ import org.springframework.scheduling.annotation.EnableScheduling;
 
 @SpringBootApplication
 @EnableEurekaClient
-@EnableFeignClients
+@EnableFeignClients({"com.hand.service"})
 //@EnableScheduling  // 开启定时任务
 public class SpringTestServiceApplication {
 

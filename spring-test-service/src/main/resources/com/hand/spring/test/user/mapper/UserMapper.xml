@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.hand.spring.test.user.mapper.UserMapper">
+    <update id="updataPassword">
+        UPDATE base_user
+        SET PASSWORD = #{password}
+        WHERE
+            username = #{username}
+    </update>
+    <select id="getUserByUsername" resultType="com.hand.spring.test.user.dto.User">
+        SELECT * FROM `base_user`
+        <if test="username != null">
+            WHERE username = #{username}
+        </if>
+    </select>
+</mapper>
