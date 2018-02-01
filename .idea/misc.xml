@@ -9,6 +9,7 @@
         <option value="$PROJECT_DIR$/api-gateway/pom.xml" />
         <option value="$PROJECT_DIR$/spring-test-service/pom.xml" />
         <option value="$PROJECT_DIR$/api-gateway-interface/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-cloud-rabbitmq/pom.xml" />
       </list>
     </option>
   </component>

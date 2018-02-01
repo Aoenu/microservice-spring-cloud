@@ -10,6 +10,7 @@
         <module name="api-gateway-interface" />
         <module name="config-server" />
         <module name="eureka-server-register" />
+        <module name="spring-cloud-rabbitmq" />
         <module name="spring-test-service" />
       </profile>
     </annotationProcessing>
@@ -20,6 +21,7 @@
       <module name="config-server" target="1.8" />
       <module name="eureka-server-register" target="1.8" />
       <module name="microservice-spring-cloud" target="1.8" />
+      <module name="spring-cloud-rabbitmq" target="1.8" />
       <module name="spring-test-service" target="1.8" />
     </bytecodeTargetLevel>
   </component>
