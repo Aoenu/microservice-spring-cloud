@@ -1,7 +1,7 @@
-package com.hand.rabbitmq.client;
+package com.hand.rabbitmq.topic.client;
 
 import org.springframework.amqp.core.AmqpTemplate;
-import org.springframework.amqp.rabbit.core.RabbitTemplate;
+import org.springframework.amqp.core.TopicExchange;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -11,11 +11,14 @@ import org.springframework.stereotype.Component;
  * @description
  */
 @Component
-public class RabbitMQClient {
+public class RabbitMQTopicClient {
     @Autowired
     private AmqpTemplate rabbitTemplate;
 
+    @Autowired
+    private TopicExchange exchange;
+
     public void send(String message){
-        this.rabbitTemplate.convertAndSend("hand",message);
+        this.rabbitTemplate.convertAndSend(exchange.getName(),"test",message);
     }
 }
