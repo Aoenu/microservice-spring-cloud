@@ -1,7 +1,7 @@
 package com.hand.controller;
 
+import com.hand.pojo.UserInfo;
 import com.hand.pojo.UserRole;
-import com.hand.security.api.vo.user.UserInfo;
 import com.hand.security.auth.token.extractor.TokenExtractor;
 import com.hand.security.auth.token.verifier.TokenVerifier;
 import com.hand.security.config.TokenProperties;

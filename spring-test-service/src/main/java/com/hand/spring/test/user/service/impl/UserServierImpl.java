@@ -1,8 +1,8 @@
 package com.hand.spring.test.user.service.impl;
 
-import com.hand.security.api.vo.user.UserInfo;
 import com.hand.spring.test.constant.UserConstant;
 import com.hand.spring.test.user.dto.User;
+import com.hand.spring.test.user.dto.UserInfo;
 import com.hand.spring.test.user.mapper.UserMapper;
 import com.hand.spring.test.user.service.IUserService;
 import org.springframework.aop.framework.AopContext;

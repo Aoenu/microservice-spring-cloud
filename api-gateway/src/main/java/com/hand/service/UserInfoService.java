@@ -1,6 +1,6 @@
 package com.hand.service;
 
-import com.hand.security.api.vo.user.UserInfo;
+import com.hand.pojo.UserInfo;
 import org.springframework.cloud.netflix.feign.FeignClient;
 import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.RequestMapping;

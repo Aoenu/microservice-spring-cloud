@@ -23,7 +23,6 @@
         <module>api-gateway</module>
         <module>spring-test-service</module>
         <module>spring-cloud-rabbitmq</module>
-        <module>api-gateway-interface</module>
     </modules>
 
     <properties>

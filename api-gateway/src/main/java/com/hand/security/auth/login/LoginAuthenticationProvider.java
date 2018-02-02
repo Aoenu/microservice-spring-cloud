@@ -1,8 +1,8 @@
 package com.hand.security.auth.login;
 
 import com.alibaba.fastjson.JSON;
+import com.hand.pojo.UserInfo;
 import com.hand.pojo.UserRole;
-import com.hand.security.api.vo.user.UserInfo;
 import com.hand.security.model.UserContext;
 import com.hand.service.UserInfoService;
 import com.hand.service.UserRoleService;

@@ -1,7 +1,7 @@
 package com.hand.spring.test.user.controller;
 
-import com.hand.security.api.vo.user.UserInfo;
 import com.hand.spring.test.user.dto.User;
+import com.hand.spring.test.user.dto.UserInfo;
 import com.hand.spring.test.user.service.IUserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -19,7 +19,8 @@ public class UserController {
     private IUserService service;
 
     @RequestMapping(value = "/updataPassword", method = RequestMethod.POST)
-    public @ResponseBody UserInfo updataPassword(@RequestBody User entity){
+    public @ResponseBody
+    UserInfo updataPassword(@RequestBody User entity){
         return service.updataPassword(entity);
     }
 

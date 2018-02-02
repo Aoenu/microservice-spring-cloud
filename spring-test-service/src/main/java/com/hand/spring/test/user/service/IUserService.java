@@ -1,7 +1,7 @@
 package com.hand.spring.test.user.service;
 
-import com.hand.security.api.vo.user.UserInfo;
 import com.hand.spring.test.user.dto.User;
+import com.hand.spring.test.user.dto.UserInfo;
 
 /**
  * @author baoben.wu@hand-china.com

@@ -1,8 +1,8 @@
 package com.hand.service;
 
 import com.google.common.collect.Lists;
+import com.hand.pojo.UserInfo;
 import com.hand.pojo.UserRole;
-import com.hand.security.api.vo.user.UserInfo;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
