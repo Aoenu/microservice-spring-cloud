@@ -37,13 +37,13 @@ public class MybatisInterceptor implements Interceptor {
 
     @Override
     public Object plugin(Object o) {
-        System.out.println("public Object plugin(Object o) {}");
+        System.out.println("plugin :");
         System.out.println("target : " + o);
         return Plugin.wrap(o, this);
     }
 
     @Override
     public void setProperties(Properties properties) {
-        System.out.println("setProperties(Properties properties)");
+        System.out.println("setProperties :");
     }
 }
