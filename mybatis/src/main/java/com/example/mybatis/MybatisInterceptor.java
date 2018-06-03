@@ -26,10 +26,10 @@ public class MybatisInterceptor implements Interceptor {
         StatementHandler statementHandler = (StatementHandler) invocation.getTarget();
         System.out.println("拦截前sql : " + statementHandler.getBoundSql().getSql());
 
-        BoundSql boundSql = statementHandler.getBoundSql();
-        Field field = boundSql.getClass().getDeclaredField("sql");
-        field.setAccessible(true);
-        field.set(boundSql, boundSql.getSql() + " WHERE StudentId = 1");
+//        BoundSql boundSql = statementHandler.getBoundSql();
+//        Field field = boundSql.getClass().getDeclaredField("sql");
+//        field.setAccessible(true);
+//        field.set(boundSql, boundSql.getSql() + " WHERE StudentId = 1");
 
         System.out.println("拦截后sql : " + statementHandler.getBoundSql().getSql());
         return invocation.proceed();
