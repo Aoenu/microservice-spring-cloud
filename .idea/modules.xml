@@ -7,6 +7,7 @@
       <module fileurl="file://$PROJECT_DIR$/eureka-server-register/eureka-server-register.iml" filepath="$PROJECT_DIR$/eureka-server-register/eureka-server-register.iml" />
       <module fileurl="file://$PROJECT_DIR$/microservice-spring-cloud.iml" filepath="$PROJECT_DIR$/microservice-spring-cloud.iml" />
       <module fileurl="file://$PROJECT_DIR$/mybatis/mybatis.iml" filepath="$PROJECT_DIR$/mybatis/mybatis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-boot-dateSource-demo/spring-boot-dateSource-demo.iml" filepath="$PROJECT_DIR$/spring-boot-dateSource-demo/spring-boot-dateSource-demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-cloud-rabbitmq/spring-cloud-rabbitmq.iml" filepath="$PROJECT_DIR$/spring-cloud-rabbitmq/spring-cloud-rabbitmq.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-test-service/spring-test-service.iml" filepath="$PROJECT_DIR$/spring-test-service/spring-test-service.iml" />
     </modules>

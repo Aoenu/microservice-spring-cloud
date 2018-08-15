@@ -10,6 +10,7 @@
         <module name="config-server" />
         <module name="eureka-server-register" />
         <module name="mybatis" />
+        <module name="spring-boot-dateSource-demo" />
         <module name="spring-cloud-rabbitmq" />
         <module name="spring-test-service" />
       </profile>
@@ -22,6 +23,7 @@
       <module name="eureka-server-register" target="1.8" />
       <module name="microservice-spring-cloud" target="1.8" />
       <module name="mybatis" target="1.8" />
+      <module name="spring-boot-dateSource-demo" target="1.8" />
       <module name="spring-cloud-rabbitmq" target="1.8" />
       <module name="spring-test-service" target="1.8" />
     </bytecodeTargetLevel>

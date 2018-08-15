@@ -21,7 +21,9 @@
         <module>eureka-server-register</module>
         <module>config-server</module>
         <module>api-gateway</module>
+        <module>mybatis</module>
         <module>spring-test-service</module>
+        <module>spring-boot-dateSource-demo</module>
         <module>spring-cloud-rabbitmq</module>
     </modules>
 

@@ -1,0 +1,44 @@
+########################################################
+###配置文件包括1个主数据源和多个数据源，
+###其中主数据源在Spring中的beanName默认为dataSource，
+###另外几个数据源的beanName分包为：data1、data2、data3
+###其中datasource的type属性可以具体指定到我们需要的数据源上面，
+###不指定情况下默认为：org.apache.tomcat.jdbc.pool.DataSource
+###当然你也可以把这些数据源配置到主dataSource数据库中，然后读取数据库生成多数据源。当然这样做的必要性并不大，难不成数据源还会经常变吗。
+########################################################
+
+# 主数据源，默认的
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/sang
+    username: root
+    password: 123456
+  jpa:
+    database: mysql
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+      naming:
+        strategy: org.hibernate.cfg.DefaultNamingStrategy
+
+custom:
+  datasource:
+    names: data1,data2,data3
+    data1:
+      driver-class-name: com.mysql.jdbc.Driver
+      url: jdbc:mysql://localhost:3306/spring-test-service
+      username: root
+      password: 123456
+    data2:
+      driver-class-name: com.mysql.jdbc.Driver
+      url: jdbc:mysql://localhost:3306/spring-test-service
+      username: root
+      password: 123456
+    data3:
+      driver-class-name: com.mysql.jdbc.Driver
+      url: jdbc:mysql://localhost:3306/spring-test-service
+      username: root
+      password: 123456
+server:
+  port: 8762

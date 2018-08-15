@@ -10,6 +10,7 @@
         <option value="$PROJECT_DIR$/spring-test-service/pom.xml" />
         <option value="$PROJECT_DIR$/spring-cloud-rabbitmq/pom.xml" />
         <option value="$PROJECT_DIR$/mybatis/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot-dateSource-demo/pom.xml" />
       </list>
     </option>
   </component>
