@@ -1,0 +1,15 @@
+server:
+  port: 8890
+spring:
+  application:
+    name: consumer-other
+  cloud:
+    stream:
+      bindings:
+        input:
+          destination: stream-demo
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest

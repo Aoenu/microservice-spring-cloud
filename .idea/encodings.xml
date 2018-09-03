@@ -8,6 +8,14 @@
     <file url="file://$PROJECT_DIR$/mybatis" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-boot-dateSource-demo" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-cloud-rabbitmq" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-cloud-stream" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-cloud-stream" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-cloud-stream" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-cloud-stream-producer" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-cloud-stream-receiver" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-cloud-stream-receiver-other" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-cloud-stream-send" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-cloud-stream-sender" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-test-service" charset="UTF-8" />
   </component>
 </project>

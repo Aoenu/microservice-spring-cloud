@@ -1,0 +1,20 @@
+server:
+  port: 8888
+spring:
+  application:
+    name: producer
+  cloud:
+    stream:
+      bindings:
+        #这里用stream给我们提供的默认output，后面会讲到自定义output
+        output:
+          #消息发往的目的地
+          destination: stream-demo
+          #消息发送的格式，接收端不用指定格式
+          content-type: text/plain
+  rabbitmq:
+    #本地Rabbitmq
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest

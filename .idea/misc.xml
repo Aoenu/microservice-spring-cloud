@@ -11,6 +11,10 @@
         <option value="$PROJECT_DIR$/spring-cloud-rabbitmq/pom.xml" />
         <option value="$PROJECT_DIR$/mybatis/pom.xml" />
         <option value="$PROJECT_DIR$/spring-boot-dateSource-demo/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-cloud-stream-sender/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-cloud-stream-reciever/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-cloud-stream/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-cloud-stream-reciever-other/pom.xml" />
       </list>
     </option>
   </component>

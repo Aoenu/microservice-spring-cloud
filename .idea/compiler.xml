@@ -12,6 +12,10 @@
         <module name="mybatis" />
         <module name="spring-boot-dateSource-demo" />
         <module name="spring-cloud-rabbitmq" />
+        <module name="spring-cloud-stream" />
+        <module name="spring-cloud-stream-reciever" />
+        <module name="spring-cloud-stream-reciever-other" />
+        <module name="spring-cloud-stream-sender" />
         <module name="spring-test-service" />
       </profile>
     </annotationProcessing>
@@ -25,6 +29,12 @@
       <module name="mybatis" target="1.8" />
       <module name="spring-boot-dateSource-demo" target="1.8" />
       <module name="spring-cloud-rabbitmq" target="1.8" />
+      <module name="spring-cloud-stream" target="1.8" />
+      <module name="spring-cloud-stream (1)" target="1.8" />
+      <module name="spring-cloud-stream-producer" target="1.8" />
+      <module name="spring-cloud-stream-reciever" target="1.8" />
+      <module name="spring-cloud-stream-reciever-other" target="1.8" />
+      <module name="spring-cloud-stream-sender" target="1.8" />
       <module name="spring-test-service" target="1.8" />
     </bytecodeTargetLevel>
   </component>
