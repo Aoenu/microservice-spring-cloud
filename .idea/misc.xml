@@ -15,7 +15,23 @@
         <option value="$PROJECT_DIR$/spring-cloud-stream-reciever/pom.xml" />
         <option value="$PROJECT_DIR$/spring-cloud-stream/pom.xml" />
         <option value="$PROJECT_DIR$/spring-cloud-stream-reciever-other/pom.xml" />
+        <option value="$PROJECT_DIR$/sleuth-trace-one/pom.xml" />
+        <option value="$PROJECT_DIR$/sleuth-trace-two/pom.xml" />
+        <option value="$PROJECT_DIR$/../spring-cloud-examples/spring-cloud-sleuth-zipkin/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-cloud-sleuth-zipkin/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-cloud-sleuth-zipkin/spring-cloud-consumer/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-cloud-sleuth-zipkin/spring-cloud-producer/pom.xml" />
       </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/spring-cloud-sleuth-zipkin/spring-cloud-zuul/pom.xml" />
+        <option value="$PROJECT_DIR$/../spring-cloud-examples/spring-cloud-sleuth-zipkin/pom.xml" />
+        <option value="$PROJECT_DIR$/../spring-cloud-examples/spring-cloud-sleuth-zipkin/spring-cloud-eureka/pom.xml" />
+        <option value="$PROJECT_DIR$/../spring-cloud-examples/spring-cloud-sleuth-zipkin/spring-cloud-producer/pom.xml" />
+        <option value="$PROJECT_DIR$/../spring-cloud-examples/spring-cloud-sleuth-zipkin/spring-cloud-zuul/pom.xml" />
+        <option value="$PROJECT_DIR$/../spring-cloud-examples/spring-cloud-sleuth-zipkin/zipkin-server/pom.xml" />
+      </set>
     </option>
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">

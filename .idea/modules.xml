@@ -7,13 +7,20 @@
       <module fileurl="file://$PROJECT_DIR$/eureka-server-register/eureka-server-register.iml" filepath="$PROJECT_DIR$/eureka-server-register/eureka-server-register.iml" />
       <module fileurl="file://$PROJECT_DIR$/microservice-spring-cloud.iml" filepath="$PROJECT_DIR$/microservice-spring-cloud.iml" />
       <module fileurl="file://$PROJECT_DIR$/mybatis/mybatis.iml" filepath="$PROJECT_DIR$/mybatis/mybatis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sleuth-trace-one/sleuth-trace-one.iml" filepath="$PROJECT_DIR$/sleuth-trace-one/sleuth-trace-one.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sleuth-trace-two/sleuth-trace-two.iml" filepath="$PROJECT_DIR$/sleuth-trace-two/sleuth-trace-two.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-boot-dateSource-demo/spring-boot-dateSource-demo.iml" filepath="$PROJECT_DIR$/spring-boot-dateSource-demo/spring-boot-dateSource-demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-cloud-sleuth-zipkin/spring-cloud-consumer/spring-cloud-consumer.iml" filepath="$PROJECT_DIR$/spring-cloud-sleuth-zipkin/spring-cloud-consumer/spring-cloud-consumer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-cloud-sleuth-zipkin/spring-cloud-eureka/spring-cloud-eureka (1).iml" filepath="$PROJECT_DIR$/spring-cloud-sleuth-zipkin/spring-cloud-eureka/spring-cloud-eureka (1).iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-cloud-sleuth-zipkin/spring-cloud-parent (1).iml" filepath="$PROJECT_DIR$/spring-cloud-sleuth-zipkin/spring-cloud-parent (1).iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-cloud-sleuth-zipkin/spring-cloud-producer/spring-cloud-producer-trace.iml" filepath="$PROJECT_DIR$/spring-cloud-sleuth-zipkin/spring-cloud-producer/spring-cloud-producer-trace.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-cloud-rabbitmq/spring-cloud-rabbitmq.iml" filepath="$PROJECT_DIR$/spring-cloud-rabbitmq/spring-cloud-rabbitmq.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-cloud-stream/spring-cloud-stream.iml" filepath="$PROJECT_DIR$/spring-cloud-stream/spring-cloud-stream.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-cloud-stream-receiver/spring-cloud-stream-receiver.iml" filepath="$PROJECT_DIR$/spring-cloud-stream-receiver/spring-cloud-stream-receiver.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-cloud-stream-receiver-other/spring-cloud-stream-receiver-other.iml" filepath="$PROJECT_DIR$/spring-cloud-stream-receiver-other/spring-cloud-stream-receiver-other.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-cloud-stream-sender/spring-cloud-stream-sender.iml" filepath="$PROJECT_DIR$/spring-cloud-stream-sender/spring-cloud-stream-sender.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-test-service/spring-test-service.iml" filepath="$PROJECT_DIR$/spring-test-service/spring-test-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-cloud-sleuth-zipkin/zipkin-server/zipkin-server (1).iml" filepath="$PROJECT_DIR$/spring-cloud-sleuth-zipkin/zipkin-server/zipkin-server (1).iml" />
     </modules>
   </component>
 </project>

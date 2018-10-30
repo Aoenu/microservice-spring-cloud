@@ -10,13 +10,19 @@
         <module name="config-server" />
         <module name="eureka-server-register" />
         <module name="mybatis" />
+        <module name="sleuth-trace-one" />
+        <module name="sleuth-trace-two" />
         <module name="spring-boot-dateSource-demo" />
+        <module name="spring-cloud-consumer" />
+        <module name="spring-cloud-eureka (1)" />
+        <module name="spring-cloud-producer-trace" />
         <module name="spring-cloud-rabbitmq" />
         <module name="spring-cloud-stream" />
-        <module name="spring-cloud-stream-reciever" />
-        <module name="spring-cloud-stream-reciever-other" />
+        <module name="spring-cloud-stream-receiver" />
+        <module name="spring-cloud-stream-receiver-other" />
         <module name="spring-cloud-stream-sender" />
         <module name="spring-test-service" />
+        <module name="zipkin-server (1)" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -27,15 +33,30 @@
       <module name="eureka-server-register" target="1.8" />
       <module name="microservice-spring-cloud" target="1.8" />
       <module name="mybatis" target="1.8" />
+      <module name="sleuth-trace-one" target="1.8" />
+      <module name="sleuth-trace-two" target="1.8" />
       <module name="spring-boot-dateSource-demo" target="1.8" />
+      <module name="spring-cloud-consumer" target="1.8" />
+      <module name="spring-cloud-eureka" target="1.8" />
+      <module name="spring-cloud-eureka (1)" target="1.8" />
+      <module name="spring-cloud-parent" target="1.8" />
+      <module name="spring-cloud-parent (1)" target="1.8" />
+      <module name="spring-cloud-producer" target="1.8" />
+      <module name="spring-cloud-producer (1)" target="1.8" />
+      <module name="spring-cloud-producer-trace" target="1.8" />
       <module name="spring-cloud-rabbitmq" target="1.8" />
       <module name="spring-cloud-stream" target="1.8" />
       <module name="spring-cloud-stream (1)" target="1.8" />
       <module name="spring-cloud-stream-producer" target="1.8" />
-      <module name="spring-cloud-stream-reciever" target="1.8" />
-      <module name="spring-cloud-stream-reciever-other" target="1.8" />
+      <module name="spring-cloud-stream-receiver" target="1.8" />
+      <module name="spring-cloud-stream-receiver-other" target="1.8" />
       <module name="spring-cloud-stream-sender" target="1.8" />
+      <module name="spring-cloud-zuul" target="1.8" />
+      <module name="spring-cloud-zuul (1)" target="1.8" />
       <module name="spring-test-service" target="1.8" />
+      <module name="zipkin-server" target="1.8" />
+      <module name="zipkin-server (1)" target="1.8" />
+      <module name="zipkinserver" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
