@@ -3,11 +3,16 @@ server:
 spring:
   application:
     name: producer
-  zipkin:
-    base-url: http://localhost:9000
-  sleuth:
-    sampler:
-      percentage: 1.0
+  #  zipkin:
+  #    base-url: http://localhost:9000
+  #  sleuth:
+  #    sampler:
+  #      percentage: 1.0
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
 eureka:
   client:
     serviceUrl:

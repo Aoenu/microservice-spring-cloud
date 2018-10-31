@@ -3,11 +3,16 @@ server:
 spring:
   application:
     name: consumer
-  zipkin:
-    base-url: http://localhost:9000
-  sleuth:
-    sampler:
-      percentage: 1.0
+#  zipkin:
+#    base-url: http://localhost:9000
+#  sleuth:
+#    sampler:
+#      percentage: 1.0
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
 eureka:
   client:
     serviceUrl:
@@ -15,3 +20,7 @@ eureka:
   instance:
     prefer-ip-address: true
     hostname: consumer
+#  spring.rabbitmq.host=localhost
+#  spring.rabbitmq.port=5672
+#  spring.rabbitmq.username=springcloud
+#  spring.rabbitmq.password=123456

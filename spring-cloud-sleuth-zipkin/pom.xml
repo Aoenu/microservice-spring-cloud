@@ -12,7 +12,6 @@
 		<module>spring-cloud-eureka</module>
 		<module>spring-cloud-producer</module>
 		<module>spring-cloud-consumer</module>
-		<module>spring-cloud-zuul</module>
 	</modules>
 
 	<packaging>pom</packaging>
